@@ -125,9 +125,13 @@ namespace TemperatureConversion
             textBox1.Text = textBox1.Text + ".";
         }
 
-        private void Happy_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Have a nice day^^"); //這是無聊寫的老師如果有看到的話不要理我><
-        }
+        //private void NumberBtn_Click(object sender, EventArgs e)
+        //{
+        //    Clear();
+
+        //    Button clickedButton = (Button)sender;        把 sender 轉成 Button
+        //    var buttonValueText = clickedButton.Text;     取出按鈕上的文字
+        //    textBox1.Text = textBox1.Text + buttonValueText;
+        //}
     }
 }

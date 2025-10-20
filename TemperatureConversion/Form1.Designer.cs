@@ -257,7 +257,6 @@
             happy.TabIndex = 16;
             happy.Text = "😆";
             happy.UseVisualStyleBackColor = false;
-            happy.Click += Happy_Click;
             // 
             // Form1
             // 
