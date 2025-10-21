@@ -6,7 +6,7 @@ namespace LifePathNumber
         {
             InitializeComponent();
         }
-        string file = "\"C:\\生命靈數.txt\"";
+        string file = "生命靈數.txt";
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
