@@ -60,12 +60,14 @@
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(300, 30);
             dateTimePicker1.TabIndex = 3;
+            dateTimePicker1.Value = new DateTime(2025, 9, 23, 0, 0, 0, 0);
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.FromArgb(255, 224, 192);
-            label2.Location = new Point(410, 123);
+            label2.Location = new Point(398, 117);
             label2.Name = "label2";
             label2.Size = new Size(61, 23);
             label2.TabIndex = 4;
