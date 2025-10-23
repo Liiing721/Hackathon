@@ -33,6 +33,7 @@
             button1 = new Button();
             dateTimePicker1 = new DateTimePicker();
             label2 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -46,12 +47,15 @@
             // 
             // button1
             // 
+            button1.AutoSize = true;
+            button1.BackColor = Color.PaleTurquoise;
             button1.Location = new Point(29, 238);
+            button1.MaximumSize = new Size(4000, 0);
             button1.Name = "button1";
-            button1.Size = new Size(133, 93);
+            button1.Size = new Size(133, 33);
             button1.TabIndex = 2;
             button1.Text = "分析結果";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // dateTimePicker1
@@ -61,17 +65,27 @@
             dateTimePicker1.Size = new Size(300, 30);
             dateTimePicker1.TabIndex = 3;
             dateTimePicker1.Value = new DateTime(2025, 9, 23, 0, 0, 0, 0);
-            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(255, 224, 192);
-            label2.Location = new Point(398, 117);
+            label2.BackColor = Color.MistyRose;
+            label2.Location = new Point(353, 114);
+            label2.MaximumSize = new Size(400, 0);
             label2.Name = "label2";
-            label2.Size = new Size(61, 23);
+            label2.Size = new Size(50, 23);
             label2.TabIndex = 4;
-            label2.Text = "label2";
+            label2.Text = "結果:";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.MistyRose;
+            label3.Location = new Point(353, 70);
+            label3.Name = "label3";
+            label3.Size = new Size(64, 23);
+            label3.TabIndex = 5;
+            label3.Text = "關於你";
             // 
             // Form1
             // 
@@ -79,6 +93,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 450);
+            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(dateTimePicker1);
             Controls.Add(button1);
@@ -95,5 +110,6 @@
         private Button button1;
         private DateTimePicker dateTimePicker1;
         private Label label2;
+        private Label label3;
     }
 }
